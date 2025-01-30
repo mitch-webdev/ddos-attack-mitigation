@@ -16,8 +16,7 @@ log_message() {
 log_message "Started script execution..."
 
 # Get today's date from logs
-#TODAY=$(date +"%d/%b/%Y")
-TODAY="24\/Jan\/2025"
+TODAY=$(date +"%d/%b/%Y")
 
 # Create ipset
 
