@@ -90,6 +90,10 @@ To flush all blocked IPs:
 
 `sudo ipset flush ipsetname`
 
+# Add the IPset to firewall (iptables)
+
+`iptables -I INPUT 9 -m set --match-set block_gptbot src -m comment --comment "Block GPT Bot" -j DROP`
+
 # Author
 
 Developed by **Michael Sunier**. Feel free to contribute by submitting pull requests or reporting issues.
